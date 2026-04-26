@@ -17,7 +17,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <!-- HEADER -->
-     
+   
    <header class="header">
 
     <div class="container header-container">
@@ -36,11 +36,64 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
         <li class="header-contact"><a class="header-contact-link" href="tel:+110001111111" target="_blank">+11 (000) 111-11-11</a></li>
     </ul>
 </address>
+
+<button class="mobile-menu-btn" type="button" aria-label="Open mobile menu">
+    <svg class="mobile-menu-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-mob-menu"></use>
+    </svg>
+</button>
     </div>
+
+    <div class="mobile-menu">
+        <button class="mobile-menu-close" type="button" aria-label="Close mobile menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8" aria-hidden="true">
+                <use href="./images/icons.svg#icon-close-icon"></use>
+            </svg>
+
+        </button>
+
+        <nav class="mobile-navigation">
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item"><a class="mobile-menu-link" href="./index.html">Studio</a></li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link" href="./index.html">Portfolio</a></li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link" href="./index.html">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <address class="mobile-adress">
+            <ul class="mobile-adres-items">
+                <li class="mobile-contact"><a class="mobile-contact-link" href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a></li>
+                <li class="mobile-contact"><a class="mobile-contact-link" href="tel:+110001111111" target="_blank">+11 (000) 111-11-11</a></li>
+            </ul>
+        </address>
+        <ul class="mobile-social-list">
+            <li class="mobile-social-item"><a class="mobile-social-link" href="#" target="_blank"
+                    rel="noopener noreferrer nofollow"><svg class="social-icon" width="20" height="20" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg></a></li>
+            <li class="mobile-social-item"><a class="mobile-social-link" href="#" target="_blank"
+                    rel="noopener noreferrer nofollow"><svg class="social-icon" width="20" height="20" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg></a></li>
+        
+            <li class="mobile-social-item"><a class="mobile-social-link" href="#" target="_blank"
+                    rel="noopener noreferrer nofollow"><svg class="social-icon" width="20" height="20" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg></a>
+            </li>
+        
+     <li class="mobile-social-item"><a class="mobile-social-link" href="#" target="_blank"
+     rel="noopener noreferrer nofollow"><svg class="social-icon" width="20" height="20" aria-hidden="true">
+    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg></a></li>
+        </ul>
+    </div>
+
    </header>
 
 <main>
     <!-- HERO -->
+     
     <section class="hero">
         <div class="container">
         <div class="hero-content">
@@ -50,6 +103,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
         </div>
         </div>
     </section>
+        
 <!-- MAIN CONTENT advantages-->
     <section class="advantages-section">
      <div class="container">
@@ -98,6 +152,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
     </section>
 
 <!-- MAIN CONTENT Our Team-->
+
     <section class="team">
         <div class="container container-team"> 
 
@@ -106,7 +161,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
         <ul class="team-list container-team-item">
 
         <li class="team-item">
-        <img class="team-item-img" src="./images/team-card-1.jpg" alt="employee's photo" width="264" height="260">
+        <img srcset="./images/img-our-team/team1-mob-2x.jpg 2x, ./images/team-card-1.jpg 1x" class="team-item-img" src="./images/team-card-1.jpg" alt="employee's photo" width="264" height="260">
         <div class="team-item-content">
         <h3 class="team-item-title">Mark Guerrero</h3>
             <p class="team-item-text">Product Designer</p>
@@ -131,7 +186,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
             </li>
 
         <li class="team-item">
-         <img class="team-item-img" src="./images/team-card-2.jpg" alt="employee's photo" width="264" height="260">
+         <img srcset="./images/img-our-team/team2-mob-2x.jpg 2x, ./images/team-card-2.jpg 1x" class="team-item-img" src="./images/team-card-2.jpg" alt="employee's photo" width="264" height="260">
         <div class="team-item-content">
          <h3 class="team-item-title">Tom Ford</h3>
          <p class="team-item-text">Frontend Developer</p>
@@ -162,7 +217,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
         </div>
     </li>
         <li class="team-item">
-        <img class="team-item-img" src="./images/team-card-3.jpg" alt="employee's photo" width="264" height="260">
+        <img srcset="./images/img-our-team/team3-mob-2x.jpg 2x, ./images/team-card-3.jpg 1x" class="team-item-img" src="./images/team-card-3.jpg" alt="employee's photo" width="264" height="260">
         <div class="team-item-content">
                 <h3 class="team-item-title">Camila Garcia</h3>
                 <p class="team-item-text">Marketing</p>
@@ -190,8 +245,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
             </div>
             </li>
 
-            <li class="team-item">
-                <img class="team-item-img" src="./images/team-card-4.jpg" alt="employee's photo" width="264" height="260">
+        <li class="team-item">
+    <img srcset="./images/img-our-team/team4-mob-2x.jpg 2x, ./images/team-card-4.jpg 1x" class="team-item-img" src="./images/team-card-4.jpg" alt="employee's photo" width="264" height="260">
                 <div class="team-item-content">
                 <h3 class="team-item-title">Daniel Wilson</h3>
                 <p class="team-item-text">UI Designer</p>
@@ -221,12 +276,12 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
             </ul>
             </div>
             </li>
-
  </ul>
 </div>
 </section>
 
 <!-- MAIN CONTENT Our portfolio -->
+
 <section class="portfolio"> 
 <div class="container">
 <div class="container-portfolio">
@@ -235,7 +290,13 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
 <li class="portfolio-item">
 
  <div class="portfolio-overlay">
- <img class="portfolio-item-img" src="./images/img-5.jpg" alt="apps" width="360" height="300">
+
+    <picture>
+        <source srcset="./images/img-portfolio/portfolio1-tab-2x.jpg 2x, ./images/img-5.jpg 1x" media="(min-width: 1158px)">
+        <source srcset="./images/img-portfolio/portfolio1-tab-2x.jpg 2x, ./images/img-5.jpg 1x" media="(min-width: 768px)">
+        <source srcset="./images/img-portfolio/portfolio1-mob-2x.jpg 2x, ./images/img-5.jpg 1x" media="(min-width: 320px)">
+        <img class="portfolio-item-img" src="./images/img-5.jpg" alt="apps" width="360" height="300">
+    </picture>
  <p class="portfolio-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
             Cloud Storage App</p>
  </div>
@@ -246,7 +307,12 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
 
  <li class="portfolio-item">
 <div class="portfolio-overlay">
- <img class="portfolio-item-img" src="./images/img-1.jpg" alt="phone" width="360" height="300">
+    <picture>
+        <source srcset="./images/img-portfolio/portfolio2-tab-2x.jpg 2x, ./images/img-1.jpg 1x" media="(min-width: 1158px)">
+        <source srcset="./images/img-portfolio/portfolio2-tab-2x.jpg 2x, ./images/img-1.jpg 1x" media="(min-width: 768px)">
+        <source srcset="./images/img-portfolio/portfolio2-mob-2x.jpg 2x, ./images/img-1.jpg 1x" media="(min-width: 320px)">
+        <img class="portfolio-item-img" src="./images/img-1.jpg" alt="apps" width="360" height="300">
+    </picture>
  <p class="portfolio-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
 Cloud Storage App</p>
 </div>
@@ -256,7 +322,13 @@ Cloud Storage App</p>
 
  <li class="portfolio-item">
 <div class="portfolio-overlay">
-<img class="portfolio-item-img" src="./images/img-2.jpg" alt="laptop" width="360" height="300">
+    <picture>
+        <source srcset="./images/img-portfolio/portfolio3-tab-2x.jpg 2x, ./images/img-2.jpg 1x" media="(min-width: 1158px)">
+        <source srcset="./images/img-portfolio/portfolio3-tab-2x.jpg 2x, ./images/img-2.jpg 1x" media="(min-width: 768px)">
+        <source srcset="./images/img-portfolio/portfolio3-mob-2x.jpg 2x, ./images/img-2.jpg 1x" media="(min-width: 320px)">
+        <img class="portfolio-item-img" src="./images/img-2.jpg" alt="apps" width="360" height="300">
+    </picture>
+
 <p class="portfolio-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App· Exotic Fruit Ecommerce App ·
  Cloud Storage App</p>
 </div>
@@ -265,7 +337,13 @@ Cloud Storage App</p>
     </li>
 
 <li class="portfolio-item">
-<div class="portfolio-overlay"><img class="portfolio-item-img" src="./images/img-3.jpg" alt="auto apps" width="360" height="300">
+<div class="portfolio-overlay">
+    <picture>
+    <source srcset="./images/img-portfolio/portfolio4-tab-2x.jpg 2x, ./images/img-3.jpg 1x" media="(min-width: 1158px)">
+    <source srcset="./images/img-portfolio/portfolio4-tab-2x.jpg 2x, ./images/img-3.jpg 1x" media="(min-width: 768px)">
+    <source srcset="./images/img-portfolio/portfolio4-mob-2x.jpg 2x, ./images/img-3.jpg 1x" media="(min-width: 320px)">
+    <img class="portfolio-item-img" src="./images/img-3.jpg" alt="apps" width="360" height="300">
+    </picture>
 <p class="portfolio-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App· Exotic Fruit Ecommerce App ·
 Cloud Storage App</p>
 </div>
@@ -275,7 +353,13 @@ Cloud Storage App</p>
 
 <li class="portfolio-item">
 <div class="portfolio-overlay">
-<img class="portfolio-item-img" src="./images/img-4.jpg" alt="mobile screens" width="360" height="300">
+    <picture>
+        <source srcset="./images/img-portfolio/portfolio5-tab-2x.jpg 2x, ./images/img-4.jpg 1x" media="(min-width: 1158px)">
+        <source srcset="./images/img-portfolio/portfolio5-tab-2x.jpg 2x, ./images/img-4.jpg 1x" media="(min-width: 768px)">
+        <source srcset="./images/img-portfolio/portfolio5-mob-2x.jpg 2x, ./images/img-4.jpg 1x" media="(min-width: 320px)">
+        <img class="portfolio-item-img" src="./images/img-4.jpg" alt="apps" width="360" height="300">
+    </picture>
+
 <p class="portfolio-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App· Exotic Fruit Ecommerce App ·
 Cloud Storage App</p>
 </div>
@@ -285,7 +369,12 @@ Cloud Storage App</p>
 
 <li class="portfolio-item">
 <div class="portfolio-overlay">
-<img class="portfolio-item-img" src="./images/img.jpg" alt="girl listening music" width="360" height="300">
+    <picture>
+    <source srcset="./images/img-portfolio/portfolio6-tab-2x.jpg 2x, ./images/img-5.jpg 1x" media="(min-width: 1158px)">
+    <source srcset="./images/img-portfolio/portfolio6-tab-2x.jpg 2x, ./images/img-5.jpg 1x" media="(min-width: 768px)">
+    <source srcset="./images/img-portfolio/portfolio6-mob-2x.jpg 2x, ./images/img-5.jpg 1x" media="(min-width: 320px)">
+    <img class="portfolio-item-img" src="./images/img-5.jpg" alt="apps" width="360" height="300">
+    </picture>
 <p class="portfolio-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App· Exotic Fruit Ecommerce App ·
 Cloud Storage App</p>
 </div>
@@ -299,7 +388,9 @@ Cloud Storage App</p>
 </section>
 
 </main>
+
 <!-- FOOTER  -->
+<!--
 <footer class="footer">
     <div class="container">
         <div class="container-footer">
@@ -431,6 +522,6 @@ Cloud Storage App</p>
 
     </div>
 </div>
-
+-->
 </body>
 </html>
