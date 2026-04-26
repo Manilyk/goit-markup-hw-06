@@ -84,8 +84,8 @@ img {
 display: flex;
 align-items: center;
 justify-content: space-between;
-    min-width: 320px;
-    padding: 16px;
+min-width: 320px;
+padding: 16px;
 }
 
 .header-navigation {
@@ -1099,21 +1099,52 @@ fill: var(--white);
 }
 
 @media screen and (min-width: 768px) {
+    
 .container {
 max-width: 768px;
+padding-left: 16px;
+padding-right: 16px;
 }
+
+.header-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 72px;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+.header-logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 120px;
+}
+
+.header-adress {
+    display: block;
+    margin-left: auto;
+}
+
+.header-adres-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.header-contact-link {
+    font-size: 12px;
+    line-height: 1.16;
+}
+
 .hero {
 max-width: 768px;
 min-height: 436px;
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.hero {
-background-image: linear-gradient(var(--grey), var(--grey)),
-            url(../images/hero-tablet-x2.jpg);
-    }
 }
 
 .hero-content {
@@ -1130,55 +1161,85 @@ line-height: 1.07;
 
 
 .advantages {
-      flex-direction: row;
-       flex-wrap: wrap;
-        gap: 72px 24px;
-        justify-content: center;
-        }
-    .advantages-list {
-       width: 356px;
-       height: 120px;
-        }
+flex-direction: row;
+flex-wrap: wrap;
+gap: 72px 24px;
+justify-content: flex-start;
+align-items: flex-start;
+}
 
-    .advantages-list-title {
-         text-align: left;
-        }
+.advantages-list {
+width: calc((100% - 24px) / 2);
+height: auto;
+}
 
-    .team-list {
+.advantages-list-title {
+text-align: left;
+}
+
+.team-list {
     flex-direction: row;
     flex-wrap: wrap;/* ОБОВʼЯЗКОВО */
     gap: 64px 24px;/* вертикальний і горизонтальний відступ */
     justify-content: center;
     /* щоб красиво центрувалось */
     }
-    .team-item {
+.team-item {
     width: 264px;
     margin: 0;
         }
         
-    .team-item-img {
+.team-item-img {
     width: 264px;
     height: 260px;
     }
 
-   .container-portfolio {
+.container-portfolio {
        max-width: 768px;
    }
 
-   .portfolio-list {
+.portfolio-list {
        gap: 72px 24px;
    }
 
-   .portfolio-item {
+.portfolio-item {
     width: calc((100% - 24px) / 2);
    }
 
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(var(--grey), var(--grey)),
+            url(../images/hero-tablet-x2.jpg);
+    }
+}
 
 @media screen and (min-width: 1158px) {
-.hero {
+.container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+
+.header-logo {
+margin-right: 76px;
+}
+.header-adres-items {
+    flex-direction: row;
+    gap: 40px;
+}
+.header-contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+    .hero {
         max-width: 1440px;
         min-height: 600px;
+        margin: 0 auto;
     }
 
     .hero-content {
@@ -1226,10 +1287,6 @@ padding-bottom: 120px;
 
 .team-item {
 width: 264px;
-}
-
-.container {
-max-width: 1440px;
 }
 
 .container-portfolio {
